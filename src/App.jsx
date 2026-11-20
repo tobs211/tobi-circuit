@@ -319,8 +319,7 @@ const DEMO_STOP_IDS = new Set(['l1', 'l2', 'l3', 'l4', 'l5', 'l6']);
 const BRAND_LOGO_URL = brandLogo;
 const ORG_LOGOS_STORAGE_KEY = 'tobs_circuit_org_logos';
 const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/+$/, '');
-const SOCKET_BASE_URL = import.meta.env.VITE_SOCKET_URL
-  || (import.meta.env.DEV ? API_BASE_URL || window.location.origin : '');
+const SOCKET_BASE_URL = '';
 const IS_GITHUB_PAGES_DEMO = (window.location.hostname === 'deeril.github.io'
   || (import.meta.env.DEV && new URLSearchParams(window.location.search).has('preview')))
   && !API_BASE_URL;

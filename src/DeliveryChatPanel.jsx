@@ -3,9 +3,7 @@ import { io as createSocketClient } from 'socket.io-client';
 import DispatchCallControls from './DispatchCallControls.jsx';
 
 const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/+$/, '');
-const SOCKET_BASE_URL = import.meta.env.VITE_SOCKET_URL
-  || API_BASE_URL
-  || (import.meta.env.DEV ? window.location.origin : '');
+const SOCKET_BASE_URL = '';
 
 export default function DeliveryChatPanel({
   deliveryId,
